@@ -1,0 +1,51 @@
+{
+    "version": "0.1.0",
+    "name": "jackpotfunds",
+    "instructions": [
+      {
+        "name": "addFunds",
+        "accounts": [
+          {
+            "name": "jackpotFunds",
+            "isMut": true,
+            "isSigner": false
+          }
+        ],
+        "args": [
+          {
+            "name": "amount",
+            "type": "u64"
+          }
+        ]
+      },
+      {
+        "name": "getFunds",
+        "accounts": [
+          {
+            "name": "jackpotFunds",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": [],
+        "returns": "u64"
+      }
+    ],
+    "accounts": [
+      {
+        "name": "JackpotFunds",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "funds",
+              "type": "u64"
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "address": "35E5UcdXztKMAftibKAnfpgKkvr5jEY47Nr8hV11QBJB"
+    }
+  }
